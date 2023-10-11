@@ -1,0 +1,74 @@
+body {
+  margin: 0 auto;
+  background-size: 50px;
+  background-image: url("rotating-tomato.gif");
+  background-repeat: repeat;
+  background-color: pink;
+  cursor: url("bloody-knife.png"), auto;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 2.6fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "zone zone zone"
+    "input input input";
+}
+
+.zone {
+  grid-area: zone;
+  place-self: center;
+  text-align: center;
+}
+
+/* referring to section in container */
+.input {
+  grid-area: input;
+  place-self: center;
+  text-align: center;
+  background-color: #d72483;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 0.5%;
+  padding-bottom: 2%;
+  font-family: "Zeyada", cursive;
+  font-size: 32px;
+  color: #f8e16c;
+}
+
+/* referring to input field itself */
+input {
+  width: 600px;
+  height: 35px;
+  border-radius: 20px;
+}
+
+button {
+  font-family: "Zeyada", cursive;
+  font-size: 24px;
+  width: 130px;
+  border-radius: 20px;
+  background-color: #156064;
+  color: #f8e16c;
+  border-style: none;
+}
+
+button:hover {
+  background-color: #f8e16c;
+  color: #156064;
+  box-shadow: 10px 10px 0px rgba(21, 96, 100, 1);
+  cursor: pointer;
+}
+
+#project {
+  font-family: "Rock Salt", cursive;
+  font-size: 96px;
+  line-height: 1em;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
